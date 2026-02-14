@@ -42,5 +42,14 @@ else:
 print("Your fighter's name is " + input_name + ", their weapon is a " + input_weapon + ", their armor is " + input_armor + ", their strength is " + str(input_str) + ", their dexterity is " + str(input_dex) + ", and their armor rating is " + str(input_armor_rating) + ".")
 print("\n")
 
-
+#creates the fighter class, which will be used to create the player and the enemyfighters. It has the attributes of name, weapon, armor, main stat, and armor rating.
+class Fighter:
+    def __init__(self, input_name, input_weapon, input_armor, input_dex, input_str, input_armor_rating, input_health = 60):
+        self.name = input_name
+        self.weapon = input_weapon
+        self.armor = input_armor
+        self.dexterity = input_dex
+        self.strength = input_str
+        self.armor_rating = input_armor_rating
+        self.health = input_health
 
